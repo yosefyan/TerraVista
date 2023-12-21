@@ -1,0 +1,42 @@
+.upDown {
+  animation: upDown 5s linear infinite;
+}
+
+@keyframes upDown {
+  0%,
+  100% {
+    transform: translateY(-2vh);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.lis p:nth-child(even) {
+  color: lightblue;
+}
+.lis p:nth-child(odd) {
+  color: red;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: lightblue;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: lightblue;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: lightseagreen;
+}

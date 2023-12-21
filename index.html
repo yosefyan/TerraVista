@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/index.js" type="module" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&display=swap"
+      rel="stylesheet" />
+    <title>TerraVista</title>
+    <style>
+      .tShadow {
+        text-shadow: 0 0 1rem black;
+      }
+      .gradientText {
+        background: linear-gradient(rgba(255, 255, 255, 0.753), #01123f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    </style>
+  </head>
+  <body
+    class="overflow-x-hidden font-['Orbitron'] bg-[url('./assets/earth.jpg')] bg-[length:100%_100%]">
+    <div
+      class="bg-black/50 flex items-center flex-col w-[100vw] h-[100vh] m-auto">
+      <div
+        class="container h-[30%] flex flex-col justify-evenly font-bold items-center">
+        <h2 class="gradientText text-5xl xl:text-8xl text-white/50 tracking-widest">
+          TerraVista
+        </h2>
+      </div>
+      <div
+        id="dataContainer"
+        class="overflow-y-auto overflow-x-hidden justify-items-center relative circle x-[90%] xl:w-[70%] h-[55%] rounded-b-lg">
+        <div id="containerImgs" class="w-full absolute h-full flex justify-center items-start">
+          <p class="text-9xl upDown h-[60%] font-bold gradientText">?</p>
+        </div>
+      </div>
+      <div class="inputArea w-[70%] h-[45%] flex justify-center items-center">
+        <input
+          class="w-[80%] h-[50%] text-6xl border-b-4 border-b-cyan-500/50 bg-transparent gradientText tracking-widest text-center font-bold focus-within:outline-none"
+          type="text"
+          id="theInput"
+          placeholder="Search any capital city..." />
+      </div>
+    </div>
+  </body>
+</html>
