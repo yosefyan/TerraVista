@@ -12,7 +12,7 @@ TerraVista is a website that allows you to explore detailed information about ca
 
 ## Getting Started
 
-1. Access TerraVista at [TerraVista](https://your-username.github.io/terravista).
+1. Access TerraVista at [TerraVista](https://yosefyan.github.io/terravista).
 
 2. Explore capital city information by interacting with the user-friendly interface.
 
